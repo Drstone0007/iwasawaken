@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 import ZAI from 'z-ai-web-dev-sdk'
 
+// Force static export for GitHub Pages compatibility
+export const dynamic = 'force-static'
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
